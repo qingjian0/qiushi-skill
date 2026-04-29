@@ -109,6 +109,20 @@ export function getPlatformCatalog({ cwd = process.cwd(), homeDir = os.homedir()
         "优先加载 skills/arming-thought/SKILL.md",
       ]
     ),
+    buildGuide(
+      {
+        id: "trae-solo",
+        name: "Trae Solo",
+        mode: "guide",
+        summary: "通过 .trae-solo/INSTALL.md 手动接入 skills 与 commands，推荐将 skills 复制到 .trae/skills/qiushi-skill/",
+        markers: [path.join(homeDir, ".trae"), path.join(cwd, ".trae")],
+        docUrl: `${GITHUB_BLOB_BASE}/.trae-solo/INSTALL.md`,
+      },
+      [
+        "让 Trae Solo 读取 .trae-solo/INSTALL.md",
+        "优先加载 skills/arming-thought/SKILL.md",
+      ]
+    ),
   ];
 }
 

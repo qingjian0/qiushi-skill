@@ -37,6 +37,7 @@ Platforms:
   hermes        Print native Hermes skills setup guidance
   codex         Print manual setup guidance
   opencode      Print manual setup guidance
+  trae-solo     Print manual setup guidance for Trae Solo
   all           Copy managed bundles and print setup guidance for the rest
 
 Examples:

@@ -14,6 +14,7 @@
 | Codex | 不依赖插件壳 | 视宿主能力而定 | `.codex/INSTALL.md` | 按文档自检 |
 | OpenCode | 不依赖插件壳 | 视宿主能力而定 | `.opencode/INSTALL.md` | 按文档自检 |
 | nanobot | 通过工作区 skills 目录自动发现 | 视宿主能力而定 | `.nanobot/INSTALL.md` | 按文档自检 |
+| Trae Solo | 通过 .trae/skills 目录自动发现 | 视宿主能力而定 | `.trae-solo/INSTALL.md` | 按文档自检 |
 | 其他宿主 | 手动集成 | 视宿主能力而定 | 直接复用 `skills/` 和 `commands/` | 手动检查 |
 
 ## Claude Code
@@ -66,12 +67,29 @@ nanobot 通过工作区 skills 目录自动发现并加载 skill。将 `skills/`
 1. 复制 `skills/` 到 `~/.nanobot/workspace/skills/`
    ```bash
    mkdir -p ~/.nanobot/workspace/skills
-   cp -r skills/* ~/.nanobot/workspace/skills/
+   cp -R skills/* ~/.nanobot/workspace/skills/
    ```
 2. 新会话中 nanobot 会自动发现所有 skill
 3. 当任务匹配某个方法论时，agent 会按需加载对应 `SKILL.md`
 
 更多说明见 [README.nanobot.md](README.nanobot.md)。
+
+## Trae Solo
+
+Trae Solo 通过 .trae/skills 目录自动发现并加载 skill。将 `skills/` 目录复制到 Trae 项目的 .trae/skills/qiushi-skill/ 目录即可完成接入。
+
+推荐步骤：
+
+1. 复制 `skills/` 到项目的 `.trae/skills/qiushi-skill/`
+   ```bash
+   mkdir -p .trae/skills/qiushi-skill
+   cp -R skills/* .trae/skills/qiushi-skill/
+   ```
+2. 新会话中 Trae Solo 会自动发现所有 skill
+3. 优先加载 `skills/arming-thought/SKILL.md` 建立实事求是原则
+4. 当任务匹配某个方法论时，agent 会按需加载对应 `SKILL.md`
+
+更多说明见 [.trae-solo/INSTALL.md](../.trae-solo/INSTALL.md)。
 
 ## Windows
 
