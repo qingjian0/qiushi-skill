@@ -1,9 +1,7 @@
 ---
 name: qiushi-skill
-description: |
-  「求是 Skill」- 以经典唯物辩证法与实践哲学武装 AI Agent 大脑的方法论 Skills 合集。
-  触发场景：分析、规划、决策、方案设计、问题诊断、对比评估、优化建议、复杂问题解决。
-  English: Qiushi Skill - A methodology skills collection based on dialectical materialism and practical philosophy to arm AI agents' brains.
+description: 「求是 Skill」- 以经典唯物辩证法与实践哲学武装 AI Agent 大脑的方法论 Skills 合集。触发场景：分析、规划、决策、方案设计、问题诊断、对比评估、优化建议、复杂问题解决。
+author: HughYau
 ---
 
 # 求是 Skill —— 武装 AI 的大脑
