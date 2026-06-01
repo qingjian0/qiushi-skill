@@ -4,6 +4,11 @@
 
 # 🔴 求是 Skill —— 武装 AI 的大脑
 
+> ⚠️ **Fork Notice**: 本仓库 Fork 自 [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill)（⭐ 3184 stars）。
+> 原项目作者：[HughYau](https://github.com/HughYau)。本 Fork 仅用于个人研究学习，所有荣誉归功于原作者。
+> 如要使用，请直接访问原项目获取最新版本。
+
+
 <p align="center">
   <strong>语言</strong>：
   <a href="./README.md">简体中文</a> |
